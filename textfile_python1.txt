@@ -1,0 +1,5 @@
+game: "rainbowsixsiege", price: 50
+game: "battlefieldone", price: 60
+game: "thewitherthree", price: 70
+game: "pokemon", price: 40
+game: "clashofclans", price: 10
