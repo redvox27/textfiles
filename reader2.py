@@ -2,21 +2,12 @@ with open("textfile_python.txt") as f:
     test = f.read()
     lijst = []
     iban = ""
+    ibanList = []
     startWaarde = 0
     pointer = 0
     index = 0
 
-while index < 5 :
-    for pointer in range(0,len(test)):
-        if pointer < startWaarde + 18:
-           iban += test[pointer]
-
-        if pointer >= 18:
-            startWaarde = pointer
-            index += 1
-
-    
-
-
-
-#wewe
+    iban = test.split("NL")
+    ibanList = ["NL" + line for line in iban]
+    ibanList.pop(0)
+    print(ibanList)
