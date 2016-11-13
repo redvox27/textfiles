@@ -8,25 +8,26 @@ with open("textfile_python.txt") as f:
     derdeDeel = ""
     lijst = []
 
+    lengte = ""
     startwaarde = 0
     eindwaarde = -1
     index =0
 
-    while index < 5 :
 
-        for pointer in range(startwaarde,len(test)):
-            if pointer < startwaarde + 4 :
+
+
+    for pointer in range(startwaarde,len(test)):
+        if pointer < startwaarde + 4 :
                 eersteDeel += test[pointer]
-                print(eersteDeel)
-            if pointer > startwaarde +4 and pointer < startwaarde + 9:
+
+        if pointer > startwaarde +3 and pointer < startwaarde + 8:
                 tweedeDeel += test[pointer]
 
-            if pointer > startwaarde + 9 and pointer < eindwaarde:
+
+        if pointer > startwaarde + 7 and pointer < eindwaarde + startwaarde + 19:
                 derdeDeel += test[pointer]
+                #print(derdeDeel)
 
-        startwaarde = eindwaarde
-        eindwaarde += 20
-        index = index +1
+        if "NL" in pointer :
 
 
-    lijst.append(eersteDeel)
